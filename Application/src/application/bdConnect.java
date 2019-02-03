@@ -37,9 +37,9 @@ public class bdConnect {
 	private Connection cn;
 	
 	private bdConnect(){
-		String url = "jdbc:mysql://mysql.iut-rcc-info.urca:3306/infs2_prj06";
-		String login = "infs2_prj06";
-		String passwd = "infs2_prj06";
+		String url = "";
+		String login = "";
+		String passwd = "";
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			this.cn = DriverManager.getConnection(url, login, passwd);
