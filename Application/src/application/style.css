@@ -1,0 +1,18 @@
+.anchor{
+    -fx-background-image: url("../../../IMG/IMG_INTERFACE/fond.png");
+    -fx-background-repeat: no-repeat;
+  -fx-background-position: center center;
+}
+
+.butMap {
+  -fx-background-color: #ffccff;
+  -fx-border-color: #ff99ff;
+  -fx-border-radius: 30px;
+  -fx-background-radius: 30px;
+  -fx-background-image: url("../../../IMG/IMG_INTERFACE/white.jpg");
+}
+
+
+.button, .butMap:not {
+	-fx-background-image: url("../../../IMG/IMG_BOIS/boisbouton.jpg");
+}

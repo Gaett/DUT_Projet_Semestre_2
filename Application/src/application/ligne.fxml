@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="720.0" maxWidth="1280.0" onMouseEntered="#afficher" prefHeight="720.0" prefWidth="1280.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Ligne">
+   <children>
+      <Button fx:id="boutonRetourCarte" layoutX="218.0" layoutY="630.0" mnemonicParsing="false" onAction="#quitter" text="retour" />
+      <ImageView fx:id="lg1" fitHeight="148.0" fitWidth="456.0" layoutX="412.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="lg2" fitHeight="148.0" fitWidth="456.0" layoutX="412.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

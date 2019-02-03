@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#initialisation" prefHeight="720.0" prefWidth="1280.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Carte">
+   <children>
+      <ImageView fitHeight="628.0" fitWidth="572.0" layoutX="354.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IMG/IMG_INTERFACE/japon.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="1.0" layoutY="1.0" prefHeight="718.0" prefWidth="1278.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="5.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="5.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="niv1" mnemonicParsing="false" onAction="#niv1" prefHeight="58.0" prefWidth="55.0" style="-fx-background-image: null;" styleClass="butMap" text="1" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Button fx:id="niv5" mnemonicParsing="false" onAction="#niv5" style="-fx-background-image: null;" styleClass="butMap" text="5" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+            <Button fx:id="niv2" mnemonicParsing="false" onAction="#niv2" style="-fx-background-image: null;" styleClass="butMap" text="2" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+            <Button fx:id="niv3" mnemonicParsing="false" onAction="#niv3" style="-fx-background-image: null;" styleClass="butMap" text="3" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+            <Button fx:id="niv4" mnemonicParsing="false" onAction="#niv4" style="-fx-background-image: null;" styleClass="butMap" text="4" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+            <Label prefHeight="21.0" prefWidth="74.0" scaleX="3.0" scaleY="3.0" text="Bienvenue" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label scaleX="3.0" scaleY="3.0" text="au" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label scaleX="3.0" scaleY="3.0" text="Japon !" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" scaleX="2.0" scaleY="2.0" text="Pseudo : " GridPane.columnIndex="11" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" scaleX="2.0" scaleY="2.0" text="Score :" GridPane.columnIndex="11" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+            <Label fx:id="pseudo" scaleX="2.0" scaleY="2.0" text="Label" GridPane.columnIndex="11" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="score" scaleX="2.0" scaleY="2.0" text="Label" GridPane.columnIndex="11" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
